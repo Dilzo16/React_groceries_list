@@ -6,7 +6,8 @@ const Content=({items,setItems,handleCkeck,handleDelete})=>{
 
 
     return (
-        <main>
+        //fragment
+        <>
             {items.length? (
                 <ItemList 
                 items={items}
@@ -15,7 +16,7 @@ const Content=({items,setItems,handleCkeck,handleDelete})=>{
             ):(
                 <p style={{marginTop:'2rem'}}>Your List is empty!</p>
             )}
-        </main>
+        </>
     )
 }
 
